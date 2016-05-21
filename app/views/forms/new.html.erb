@@ -1,0 +1,17 @@
+<div>
+  Create your form
+  All fields will be text fields for now.
+</div>
+
+<div class="form-group">
+  <%= form_tag new_form_path, method: :post, class: "navbar-form navbar-left search-form" do %>
+    <% @inputs.times do |i| %>
+      <div class="input-group">
+        <%= label_tag "field_#{i}", "Field #{i}:" %>
+        <%= text_field_tag("field_#{i}", '', class: "form-control") %>
+      </div>
+      <br />
+    <% end %>
+  <% end %>
+
+</div>

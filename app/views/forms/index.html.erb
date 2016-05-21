@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>CREATE YOUR FORM</h1>
+  </div>
+
+  <center>
+    How many fields will your form have?
+    <div class="form-group">
+      <%= form_tag new_form_path, method: :get, class: "navbar-form navbar-center search-form" do %>
+        <%= number_field :fields_quantity, nil, in: 1..10, class: 'input-group' %>
+        <br />
+        <br />
+        <%= submit_tag 'CREATE FORM', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+
+  </center>
+
+</div>

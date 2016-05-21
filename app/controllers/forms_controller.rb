@@ -1,6 +1,6 @@
 class FormsController < ApplicationController
   def new
-    @inputs = 5
+    @inputs = params[:fields_quantity].first.to_i
   end
 
   def index

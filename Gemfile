@@ -21,6 +21,7 @@ gem 'sprockets-rails', require: 'sprockets/railtie'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.4'
+  gem 'pry'
 end
 
 group :development do
